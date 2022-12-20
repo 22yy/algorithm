@@ -6,7 +6,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "algorithm",
   description: "算法笔记",
-  base: "/",
+  base: "/algorithm/",
   theme,
   plugins:[
     searchPlugin

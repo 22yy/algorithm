@@ -22,6 +22,9 @@ module.exports = [
       'dynamic/subString/两个字符串的删除操作',
       'dynamic/subString/编辑距离',
 
+      'dynamic/subString/回文子串',
+      'dynamic/subString/最长回文子串'
+    
     ]
   }
 ]

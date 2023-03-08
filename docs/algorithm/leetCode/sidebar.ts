@@ -30,6 +30,11 @@ module.exports = [{
   children: require('./dynamic/sidebar')
 },
 {
+  text:'回溯',
+  collapsable: true,
+  children: require('./combine/sidebar')
+},
+{
   text:'其他',
   collapsable: true,
   children:require('./other/sidebar')                                                         

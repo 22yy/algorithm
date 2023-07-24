@@ -26,5 +26,12 @@ module.exports = [
       'dynamic/subString/最长回文子串'
     
     ]
-  }
+  },
+  {
+    text:'买卖股票的最佳时机',
+    collapsable: true,
+    children: [
+      'dynamic/gupiao/1',
+    ]
+  },
 ]

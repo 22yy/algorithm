@@ -8,7 +8,8 @@ module.exports = [
       '/writing/promise/promise.any',
       '/writing/promise/promise.race',
       '/writing/promise/promise.all',
-      '/writing/promise/promise.allSettled'
+      '/writing/promise/promise.allSettled',
+      '/writing/promise/promise.finally',
     ]
   },
   {
@@ -25,6 +26,10 @@ module.exports = [
     '/writing/other/bind',
     '/writing/other/链式调用',
     '/writing/other/compose',
+    '/writing/other/Vue.use',
+    '/writing/other/flatMap',
+    '/writing/other/instanceof',
+    '/writing/other/setInterval',
    ]
   }
 ]

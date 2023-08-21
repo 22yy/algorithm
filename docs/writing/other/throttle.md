@@ -75,6 +75,7 @@ function throttle(fn, interval, options = { leading: true, trailing: false }) {
   return _throttle;
 }
 ```
+
 ```js
 const inputEl = document.querySelector("input");
 let counter = 0;
@@ -86,15 +87,35 @@ const inputChange = function (event) {
 const _throttle = throttle(inputChange, 3000, {
   leading: false,
   trailing: true,
-  resultCallback: function(res) {
-    console.log('resultCallback:', res)
-  }
+  resultCallback: function (res) {
+    console.log("resultCallback:", res);
+  },
 });
 
 const tempCallback = (...args) => {
- _throttle.apply(inputEl, args).then(res => {
-  console.log("Promise:", res)
- })
+  _throttle.apply(inputEl, args).then((res) => {
+    console.log("Promise:", res);
+  });
 };
 inputEl.oninput = tempCallback;
+```
+
+```js
+function throttled(fn, delay) {
+  let timer = null;
+  let starttime = Date.now();
+  return function () {
+    let curTime = Date.now(); // 当前时间
+    let remaining = delay - (curTime - starttime); // 从上一次到现在，还剩下多少多余时间
+    let context = this;
+    let args = arguments;
+    clearTimeout(timer);
+    if (remaining <= 0) {
+      fn.apply(context, args);
+      starttime = Date.now();
+    } else {
+      timer = setTimeout(fn, remaining);
+    }
+  };
+}
 ```

@@ -28,10 +28,10 @@ module.exports = [
     ]
   },
   {
-    text:'买卖股票的最佳时机',
+    text:'其他',
     collapsable: true,
     children: [
-      'dynamic/gupiao/1',
+      'dynamic/other/买卖股票最佳时机',
     ]
   },
 ]

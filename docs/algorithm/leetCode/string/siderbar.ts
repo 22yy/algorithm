@@ -14,5 +14,9 @@ module.exports=[
   {
     text:'千位分割',
     link:'string/千位分割'
+  },
+  {
+    text:'字符串转化为驼峰命名',
+    link:'string/字符串转化为驼峰命名'
   }
 ]

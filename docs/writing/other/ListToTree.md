@@ -19,6 +19,28 @@ function transListToTree(list, root) {
 }
 ```
 
+非递归
+
+```js
+function toTree(data) {
+  const tree = [];
+  const itemObj = {};
+  data.forEach((item) => {
+    item.children = [];
+    itemObj[item.id] = item;
+  });
+
+  data.forEach((item) => {
+    if (item.pid) {
+      itemObj[item.pid].children.push(item);
+    } else {
+      tree.push(item);
+    }
+  });
+  return tree;
+}
+```
+
 ```js
 let list = [
   { id: "1", name: "1234", pid: "" },

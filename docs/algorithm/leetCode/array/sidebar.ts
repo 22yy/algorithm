@@ -29,5 +29,9 @@ module.exports = [{
     {
         text: '螺旋矩阵 II',
         link: 'array/spiral-matrix-ii'
+    },
+    {
+        text: '合并区间',
+        link: 'array/合并区间'
     }
 ]

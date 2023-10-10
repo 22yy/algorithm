@@ -35,6 +35,11 @@ module.exports = [{
   children: require('./combine/sidebar')
 },
 {
+  text:'贪心',
+  collapsable: true,
+  children: require('./greedy/sidebar')
+},
+{
   text:'其他',
   collapsable: true,
   children:require('./other/sidebar')                                                         

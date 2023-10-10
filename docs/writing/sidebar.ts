@@ -30,6 +30,8 @@ module.exports = [
     '/writing/other/flatMap',
     '/writing/other/instanceof',
     '/writing/other/setInterval',
+    '/writing/other/对象拍平',
+    '/writing/other/排序',
    ]
   }
 ]

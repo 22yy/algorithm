@@ -32,6 +32,7 @@ module.exports = [
     collapsable: true,
     children: [
       'dynamic/other/买卖股票最佳时机',
+      'dynamic/other/正则表达式匹配',
     ]
   },
 ]

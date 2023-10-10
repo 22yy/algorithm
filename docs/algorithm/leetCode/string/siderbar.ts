@@ -18,5 +18,9 @@ module.exports=[
   {
     text:'字符串转化为驼峰命名',
     link:'string/字符串转化为驼峰命名'
+  },
+  {
+    text:'字符串解码',
+    link:'string/字符串解码'
   }
 ]
